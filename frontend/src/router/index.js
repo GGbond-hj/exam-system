@@ -13,19 +13,19 @@ const routes = [
   {
     path: '/student',
     name: 'StudentHome',
-    component: () => import('../views/StudentHome.vue'),
+    component: () => import('../views/student/StudentHome.vue'),
     meta: { requiresAuth: true, role: 'student' }
   },
   {
     path: '/teacher',
     name: 'TeacherHome',
-    component: () => import('../views/TeacherHome.vue'),
+    component: () => import('../views/teacher/TeacherHome.vue'),
     meta: { requiresAuth: true, role: 'teacher' }
   },
   {
     path: '/admin',
     name: 'AdminHome',
-    component: () => import('../views/AdminHome.vue'),
+    component: () => import('../views/admin/AdminHome.vue'),
     meta: { requiresAuth: true, role: 'admin' }
   }
 ]
